@@ -31,7 +31,7 @@ export default function FeaturedArticleCard() {
       {/* Content */}
       <div className="flex flex-col justify-between">
         <div>
-          <h3 className="text-xl font-semibold mb-2">
+          <h3 className="text-xl text-gray-800 font-semibold mb-2">
             {featuredArticle.title}
           </h3>
 
