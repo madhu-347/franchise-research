@@ -13,7 +13,7 @@ export default function FeaturedArticleCard() {
       <div
         className="
           relative w-full
-          md:w-[401px]
+          md:w-100.25
           aspect-video
           overflow-hidden
           shrink-0

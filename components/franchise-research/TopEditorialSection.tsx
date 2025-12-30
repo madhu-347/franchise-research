@@ -16,12 +16,12 @@ export default function TopEditorialSection() {
       </div>
 
       {/* Right – Sidebar */}
-     <div
-        className="
-            lg:col-span-4
-            lg:max-h-[250px]
-        "
-        >
+    <div
+      className="
+          lg:col-span-4
+          lg:max-h-62.5
+      "
+      >
         <ScrollableSidebar />
      </div>
     </section>
