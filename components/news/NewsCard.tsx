@@ -8,7 +8,7 @@ export default function NewsCard({ item }: { item: NewsItem }) {
   return (
     <article className="flex flex-col">
       {/* Image */}
-      <div className="relative aspect-[16/9] overflow-hidden rounded-lg">
+      <div className="relative aspect-video overflow-hidden rounded-lg">
         <Image
           src={item.image}
           alt={item.title}
