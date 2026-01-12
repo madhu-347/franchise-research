@@ -2,6 +2,7 @@ import Header from "@/components/header/Header";
 import { trendingData } from "@/data/trendingData";
 import TrendingStrip from "@/components/trending/TrendingStrip";
 import FranchiseNewsSection from "@/components/news/FranchiseNewsSection";
+import RankingsSection from "@/components/rankings/RankingSection";
 
 export default function HeaderPage() {
   return (
@@ -9,6 +10,7 @@ export default function HeaderPage() {
       <Header />
       <TrendingStrip items={trendingData} />;
       <FranchiseNewsSection />
+      <RankingsSection />
     </>
   );
 }
