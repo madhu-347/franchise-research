@@ -6,12 +6,19 @@ export default function GrowthClubFilters() {
   const { filters } = growthClubCardData;
 
   return (
-    <div className="rounded-md border bg-white p-6">
-      <h4 className={`mb-4 font-semibold text-[#0F3460] text-lg ${passionOne.className}`}>
+    <div className="border bg-white p-6">
+      <h4 className={`mb-4 font-semibold text-[#0F3460] text-3xl ${passionOne.className}`}>
         {filters.title}
       </h4>
        <h3 className={`${hostGrotesk.className}`}>Filter</h3>
-      <div className={`${hostGrotesk.className} grid grid-cols-1 gap-4 sm:grid-cols-3`}>
+      <div
+        className={`
+          ${hostGrotesk.className}
+          grid grid-cols-1 gap-4
+          sm:grid-cols-[1.2fr_1.5fr_auto]
+          items-end
+        `}
+      >
         {/* Industry */}
         <div>
           <label className="mb-1 block text-xs font-medium text-gray-500">
@@ -51,7 +58,7 @@ export default function GrowthClubFilters() {
 
         {/* CTA */}
         <div className="flex items-end">
-          <button className="w-full rounded-md bg-blue-900 px-4 py-2 text-md font-semibold text-white">
+          <button className="rounded-md bg-[#0F3460] px-4 py-2 text-md font-semibold text-white">
             {filters.applyCta.label}
           </button>
         </div>

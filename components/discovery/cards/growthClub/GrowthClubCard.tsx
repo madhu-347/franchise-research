@@ -21,7 +21,7 @@ export default function GrowthClubCard() {
             className="object-contain"
           />
 
-          <h3 className={`text-xl font-bold text-[#0F3460] leading-snug ${passionOne.className}`}>
+          <h3 className={`text-2xl font-bold text-[#0F3460] leading-snug ${passionOne.className}`}>
             {title}
           </h3>
 

@@ -1,26 +1,29 @@
 import { supplierCardData } from "@/data/discovery/supplierData";
+import { hostGrotesk } from "@/fonts/hostGrotesk";
+import { passionOne } from "@/fonts/passionOne";
 
 export default function SupplierFilters() {
   const { filters } = supplierCardData;
 
   return (
-    <div className="rounded-md bg-blue-800 p-6">
-      <h4 className="mb-4 font-semibold text-white">
+    <div className="border p-6">
+      <h4
+        className={`text-3xl font-bold leading-snug ${passionOne.className}`}
+      >
         {filters.title}
       </h4>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+      <div
+        className={`mt-6 grid grid-cols-1 gap-6 sm:grid-cols-3 ${hostGrotesk.className}`}
+      >
         {/* Category */}
         <div>
-          <label className="mb-1 block text-xs font-medium text-gray-300">
+          <label className=" block text-xs font-medium text-[#F8F9FA]">
             Category
           </label>
-          <select className="w-full rounded px-3 py-2 text-sm text-black">
+          <select className="w-full rounded px-3 py-2 text-sm bg-white text-black">
             {filters.categoryOptions.map((option) => (
-              <option
-                key={option.value}
-                value={option.value}
-              >
+              <option key={option.value} value={option.value}>
                 {option.label}
               </option>
             ))}
@@ -29,15 +32,12 @@ export default function SupplierFilters() {
 
         {/* Sort */}
         <div>
-          <label className="mb-1 block text-xs font-medium text-gray-300">
+          <label className="block text-xs font-medium text-[#F8F9FA]">
             Sort
           </label>
-          <select className="w-full rounded px-3 py-2 text-sm text-black">
+          <select className="w-full rounded px-3 py-2 text-sm bg-white text-black">
             {filters.sortOptions.map((option) => (
-              <option
-                key={option.value}
-                value={option.value}
-              >
+              <option key={option.value} value={option.value}>
                 {option.label}
               </option>
             ))}
@@ -46,7 +46,7 @@ export default function SupplierFilters() {
 
         {/* CTA */}
         <div className="flex items-end">
-          <button className="w-full rounded-md bg-pink-500 px-4 py-2 text-sm font-semibold text-white">
+          <button className="w-full rounded-md bg-[#E5CAFA] text-[#0F3460]  py-2 text-md font-semibold">
             {filters.searchCta.label}
           </button>
         </div>
