@@ -11,8 +11,8 @@ export default function HeaderPage() {
       <Header />
       <TrendingStrip items={trendingData} />;
       <FranchiseNewsSection />
-      <DiscoverySection />
       <RankingsSection />
+      <DiscoverySection />
     </>
   );
 }
