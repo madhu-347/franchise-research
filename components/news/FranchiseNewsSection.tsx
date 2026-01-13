@@ -25,7 +25,7 @@ export default function FranchiseNewsSection() {
   return (
     <section className="py-12">
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className={`${robotoCondensed.className} mb-6 text-4xl font-bold`}>
+        <h2 className={`${robotoCondensed.className} mb-6 text-4xl text-black font-bold`}>
           Franchise Industry News
         </h2>
 
