@@ -11,7 +11,7 @@ export default function RankingsCard({
          <span className="text-sm font-semibold uppercase tracking-wide text-[#F33FDE]">
         {item.tag}
        </span>
-      <div className="relative aspect-[4/3] overflow-hidden rounded-md">
+      <div className="relative aspect-video overflow-hidden rounded-md">
        <Image
           src={item.image}
           alt={item.title}
