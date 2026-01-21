@@ -8,7 +8,7 @@ export const headerNavData: HeaderNavItem[] = [
     children: [
       {
         label: "Find a Franchise Opportunity",
-        href: "/find-franchise",
+        href: "/buy/find",
         icon: "search",
       },
       {
