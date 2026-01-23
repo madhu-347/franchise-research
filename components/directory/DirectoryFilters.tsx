@@ -24,7 +24,9 @@ export default function DirectoryFilters({
       >
         <option>All</option>
         <option>Consumer Brands</option>
-        <option>Services</option>
+        <option>Services</option> 
+        <option>Food & Beverage</option>
+        <option>Health & Fitness</option>
       </select>
 
       <input

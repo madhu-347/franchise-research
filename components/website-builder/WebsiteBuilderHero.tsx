@@ -22,10 +22,12 @@ export default function WebsiteBuilderHero() {
     overflow-hidden
     bg-no-repeat
     bg-cover
+    bg-center
+    md:bg-[position:20%_center]
+    lg:bg-[position:10%_center]
   "
   style={{
     backgroundImage: "url('/images/website-builder/hero-bg.png')",
-    backgroundPosition: "10% center",
   }}
 >
   {/* Dark overlay for readability */}
