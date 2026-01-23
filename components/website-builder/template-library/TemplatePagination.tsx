@@ -15,9 +15,9 @@ export default function TemplatePagination({
       <button
         onClick={() => setIndex(Math.max(index - 1, 0))}
         disabled={index === 0}
-        className="p-1 disabled:opacity-40"
+        className="p-1 rounded-full bg-black "
       >
-        <ChevronLeft />
+        <ChevronLeft className = "text-white" />
       </button>
 
       {Array.from({ length: count }).map((_, i) => (
@@ -25,7 +25,7 @@ export default function TemplatePagination({
           key={i}
           onClick={() => setIndex(i)}
           className={`px-1 ${
-            i === index ? "font-bold text-[#F33FDE]" : "text-gray-600"
+            i === index ? "font-bold text-black" : "text-gray-600"
           }`}
         >
           {i + 1}
@@ -35,9 +35,9 @@ export default function TemplatePagination({
       <button
         onClick={() => setIndex(Math.min(index + 1, count - 1))}
         disabled={index === count - 1}
-        className="p-1 disabled:opacity-40"
+        className="p-1 rounded-full bg-black disabled:opacity-40"
       >
-        <ChevronRight />
+        <ChevronRight className = "text-white"/>
       </button>
 
     </div>
