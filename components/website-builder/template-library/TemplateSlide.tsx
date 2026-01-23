@@ -11,6 +11,7 @@ export default function TemplateSlide({ image }: { image: string }) {
         overflow-hidden
         bg-white
         shadow-sm
+        mx-auto
       "
     >
       <Image
