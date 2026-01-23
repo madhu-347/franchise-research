@@ -52,7 +52,7 @@ export default function MobileHeader() {
       {/* Slide-in Menu */}
 <div
   className={`
-     fixed top-0 right-0 z-50
+     fixed top-0 -right-2 z-50
     w-[70%] max-w-sm
     bg-white
     transform transition-transform duration-300 ease-out
